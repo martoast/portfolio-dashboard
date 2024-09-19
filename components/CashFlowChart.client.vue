@@ -67,6 +67,6 @@ const series = [{
   <div class="bg-white rounded-lg shadow p-6">
     <h3 class="font-bold text-xl mb-2 text-gray-800">Estimated Yearly Cash Flow</h3>
     <apexchart type="bar" height="160" :options="chartOptions" :series="series"></apexchart>
-    <p class="text-sm text-gray-600 mt-2">Monthly: {{ formatCurrency(currentMonthlyFlow) }}</p>
+    <p class="text-sm font-bold text-gray-600 mt-2">Monthly: {{ formatCurrency(currentMonthlyFlow) }}</p>
   </div>
 </template>

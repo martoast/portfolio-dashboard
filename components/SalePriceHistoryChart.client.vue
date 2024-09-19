@@ -2,12 +2,12 @@
 import { ref, computed, onMounted } from 'vue'
 
 const propertyData = ref([
-  { name: "Sunset Meadows Apartments", data: [280000, 310000, 350000, 425000, 500000, 580000] },
-  { name: "Oakridge Townhomes", data: [320000, 350000, 390000, 460000, 520000, 610000] },
-  { name: "Riverfront Condos", data: [400000, 450000, 520000, 600000, 680000, 750000] },
-  { name: "Pine Valley Estates", data: [550000, 600000, 650000, 720000, 800000, 920000] },
-  { name: "Maplewood Terrace", data: [230000, 260000, 300000, 350000, 410000, 480000] },
-  { name: "Hillcrest Manor", data: [480000, 520000, 570000, 650000, 730000, 850000] }
+  { name: "Sunset Meadows Apartments", data: [280000, 310000, 350000, 425000, 500000] },
+  { name: "Oakridge Townhomes", data: [320000, 350000, 390000, 460000, 520000] },
+  { name: "Riverfront Condos", data: [400000, 450000, 520000, 600000, 680000] },
+  { name: "Pine Valley Estates", data: [550000, 600000, 650000, 720000, 800000] },
+  { name: "Maplewood Terrace", data: [230000, 260000, 300000, 350000, 410000] },
+  { name: "Hillcrest Manor", data: [480000, 520000, 570000, 650000, 730000] }
 ])
 
 const windowWidth = ref(1024) // Default to a larger screen size
@@ -26,7 +26,7 @@ const chartOptions = computed(() => ({
     height: isMobile.value ? 400 : 350,
     zoom: { enabled: false },
   },
-  colors: ['#0058ff', '#00d1ff', '#003380', '#64748b'],
+  // colors: ['#0058ff', '#00d1ff', '#003380', '#64748b'],
   dataLabels: { enabled: false },
   stroke: { width: 3, curve: 'smooth' },
   title: {
@@ -38,7 +38,7 @@ const chartOptions = computed(() => ({
     borderColor: '#cbd5e1',
   },
   xaxis: {
-    categories: ['2010', '2015', '2020', '2023'],
+    categories: ['2010', '2015', '2020', '2023' , '2024'],
     labels: { style: { colors: '#64748b' } },
   },
   yaxis: {
